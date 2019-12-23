@@ -1,0 +1,27 @@
+{
+    "name": "google/cloud-error-reporting",
+    "description": "Stackdriver Error Reporting Client for PHP",
+    "license": "Apache-2.0",
+    "minimum-stability": "stable",
+    "require": {
+        "google/cloud-logging": "^1.5.0",
+        "google/proto-client": "^0.25",
+        "google/gax": "^0.25"
+    },
+    "suggest": {
+        "ext-grpc": "the gRPC extension allows more granular control over Error Reporting"
+    },
+    "extra": {
+        "component": {
+            "id": "cloud-error-reporting",
+            "target": "GoogleCloudPlatform/google-cloud-php-errorreporting.git",
+            "path": "src/ErrorReporting",
+            "entry": null
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Google\\Cloud\\ErrorReporting\\": ""
+        }
+    }
+}
